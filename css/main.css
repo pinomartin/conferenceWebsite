@@ -124,8 +124,94 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+
+/******GLOBALES*******/
+
+.contenedor {
+    width: 98%;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 480px) {
+    .contenedor {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .contenedor {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 990px) {
+    .contenedor {
+        width: 90%;
+        max-width: 1100px;
+    }
+}
+
+.seccion {
+    padding: 30px 0;
+}
+
+.seccion p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
 h2 {
     font-family: 'Oswald', sans-serif;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/*imagen de 3 circulos(siempre q tenga :after:before va content)*/
+
+h2::after {
+    content: '';
+    margin: 0 auto;
+    background-image: url(../img/separador.png);
+    height: 30px;
+    width: 100px;
+    display: block;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #fe4910;
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+}
+
+.button {
+    background-color: #fe4910;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 20px;
+    display: inline-block;
+    transition: all .3s ease;
+}
+
+.button:hover {
+    background-color: #e33000;
+}
+
+.float-right {
+    float: right;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -234,6 +320,270 @@ h1.nombre-sitio {
         margin: 0;
         line-height: 1;
     }
+}
+
+
+/*BARRA*/
+
+div.barra {
+    background-color: #353535;
+    padding: 20px 0;
+}
+
+div.logo {
+    width: 80%;
+    float: left;
+}
+
+div.logo img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    div.logo {
+        width: 33%;
+        float: left;
+    }
+}
+
+
+/*BARRA NAVEGACION PRINCIPAL*/
+
+nav.navegacion-principal {
+    display: none;
+}
+
+nav.navegacion-principal a {
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav.navegacion-principal a:hover {
+    background-color: #fe4910;
+}
+
+nav.navegacion-principal a:last-child {
+    border: 2px solid #fe4910;
+    color: #fe4910;
+}
+
+nav.navegacion-principal a:last-child:hover {
+    color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+    nav.navegacion-principal {
+        width: 67%;
+        float: right;
+        text-align: right;
+        display: block;
+    }
+    nav.navegacion-principal a {
+        margin-right: 10px;
+        /*line-height: 50px;*/
+        padding: 10px 10px;
+        display: inline-block;
+        width: auto;
+        text-align: center;
+        margin: 10px 10px 0 0;
+    }
+}
+
+
+/*---MENU MOBILE---*/
+
+div.menu-movil {
+    width: 60px;
+    display: block;
+    float: right;
+    text-align: right;
+    margin-top: 12px;
+}
+
+div.menu-movil:hover {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    div.menu-movil {
+        display: none;
+    }
+}
+
+
+/*Diseño de Menu Hamburguesa*/
+
+div.menu-movil span {
+    height: 8px;
+    margin-bottom: 6px;
+    background-color: #ffffff;
+    display: block;
+}
+
+
+/*---Talleres Cronograma*/
+
+
+/*Usamos Relative en el Padre y
+Absolute en la clase Hija*/
+
+section.cronograma {
+    position: relative;
+}
+
+div.contenedor-video {
+    max-width: 100%;
+    /*Elimina la barra horizontal*/
+    overflow-x: hidden;
+}
+
+div.contenido-cronograma {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+div.cronograma-evento {
+    background-color: rgba(255, 255, 255, .8);
+    padding: 15px;
+    margin-top: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+    div.cronograma-evento {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 962px) {
+    div.cronograma-evento {
+        width: 50%;
+    }
+}
+
+nav.menu-cronograma {
+    width: 100%;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    nav.menu-cronograma {
+        display: table;
+    }
+}
+
+nav.menu-cronograma a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+@media only screen and (min-width: 768px) {
+    nav.menu-cronograma a {
+        display: table-cell;
+    }
+}
+
+nav.menu-cronograma a i,
+div.detalle-evento p i {
+    color: #fe4910;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+
+/*detalle evento///*/
+
+div.detalle-evento {
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+    padding: 0 20px;
+}
+
+
+/*para que el ultimo no tenga borde*/
+
+div.detalle-evento:nth-child(2) {
+    border: none;
+}
+
+div.detalle-evento p {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+/*---INVITADOS---*/
+
+ul.lista-invitados li {
+    padding: 10px;
+    float: left;
+}
+
+@media only screen and (min-width: 480px) {
+    ul.lista-invitados li {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    ul.lista-invitados li {
+        width: 33.3%;
+    }
+}
+
+div.invitado {
+    position: relative;
+    overflow: hidden;
+}
+
+div.invitado img {
+    max-width: 100%;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .3s ease-in-out;
+}
+
+div.invitado:hover img {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    transform: scale(1.1);
+    transform: rotate(2deg);
+}
+
+div.invitado p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px 10px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, .55);
+    width: 100%;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    color: #fe4910;
+    text-transform: uppercase;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+div.invitado:hover p {
+    bottom: -80px;
+    opacity: 0;
 }
 
 

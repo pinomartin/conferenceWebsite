@@ -51,11 +51,118 @@
     </header>
 
     <div class="barra">
-
+        <div class="contenedor clearfix">
+            <div class="logo">
+                <img src="img/logo.svg" alt="Logotipo">
+            </div>
+            <div class="menu-movil">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navegacion-principal clearfix">
+                <a href="#">Conferencia</a>
+                <a href="#">Calendario</a>
+                <a href="#">Invitados</a>
+                <a href="#">Reservas</a>
+            </nav>
+        </div>
+        <!--CIERRE DE CONTENEDOR-->
     </div>
+    <!--CIERRE DE LA BARRA-->
 
+    <section class="seccion contenedor">
+        <h2>La mejor conferencia de Diseño Web en Español</h2>
+        <p>Inserte texto descriptivo aqui</p>
+    </section>
+    <!--seccion-->
 
+    <section class="cronograma">
+        <div class="contenedor-video">
+            <video autoplay loop poster="img/bg-talleres.jpg">
+                <source src="video/video.mp4" type="video/mp4">
+                <source src="video/video.webm" type="video/webm">
+                <source src="video/video.ogv" type="video/ogb">
+            </video>
+        </div>
+        <!--contenedor-video-->
+        <div class="contenido-cronograma">
+            <div class="contenedor">
+                <div class="cronograma-evento">
+                    <h2>Cronograma del Evento</h2>
+                    <nav class="menu-cronograma">
+                        <a href="#talleres"><i class="fas fa-code"></i>Talleres</a>
+                        <a href="#conferencias"><i class="fas fa-comment-alt"></i>Conferencias</a>
+                        <a href="#seminarios"><i class="fas fa-university"></i>Seminarios</a>
+                    </nav>
 
+                    <div id="talleres" class="info-curso ocultar clearfix">
+                        <div class="detalle-evento">
+                            <h3>HTML, CSS3 y JavaScript</h3>
+                            <p><i class="fas fa-clock"></i> 22:00 hrs</p>
+                            <p><i class="fas fa-calendar"></i> 28 de Febrero</p>
+                            <p><i class="fas fa-user"></i> Martin Pino</p>
+                        </div>
+                        <div class="detalle-evento">
+                            <h3>Responsive Web Design</h3>
+                            <p><i class="fas fa-clock"></i> 10:00 hrs</p>
+                            <p><i class="fas fa-calendar"></i> 29 de Febrero</p>
+                            <p><i class="fas fa-user"></i> Martin Pino</p>
+                        </div>
+                        <a href="#" class="button float-right">Ver Todos</a>
+                    </div>
+                    <!--.talleres-->
+                </div>
+                <!--.cronograma-evento-->
+            </div>
+            <!--.contenedor-->
+        </div>
+        <!--.contenido-cronograma-->
+    </section>
+    <!--.cronograma-->
+
+    <section class="invitados contenedor seccion">
+        <h2>Nuestros Invitados</h2>
+        <ul class="lista-invitados clearfix">
+            <li>
+                <div class="invitado">
+                    <img src="/img/invitado1.jpg" alt="imagen invitado">
+                    <p>Rafael Bautista</p>
+                </div>
+            </li>
+            <li>
+                <div class="invitado">
+                    <img src="/img/invitado2.jpg" alt="imagen invitado">
+                    <p>Shari Herrera</p>
+                </div>
+            </li>
+            <li>
+                <div class="invitado">
+                    <img src="/img/invitado3.jpg" alt="imagen invitado">
+                    <p>Ignacio Gonzalez</p>
+                </div>
+            </li>
+            <li>
+                <div class="invitado">
+                    <img src="/img/invitado4.jpg" alt="imagen invitado">
+                    <p>Susana Rivera</p>
+                </div>
+            </li>
+            <li>
+                <div class="invitado">
+                    <img src="/img/invitado5.jpg" alt="imagen invitado">
+                    <p>Lisandro Vazquez</p>
+                </div>
+            </li>
+            <li>
+                <div class="invitado">
+                    <img src="/img/invitado6.jpg" alt="imagen invitado">
+                    <p>Maka Pecha</p>
+                </div>
+            </li>
+
+        </ul>
+    </section>
 
     <script src="js/vendor/modernizr-3.7.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
