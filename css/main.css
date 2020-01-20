@@ -194,10 +194,17 @@ h3 {
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
     text-decoration: none;
+    border: 2px solid #fe4910;
     font-size: 1em;
     margin-top: 20px;
     display: inline-block;
     transition: all .3s ease;
+}
+
+.button.hollow,
+.button.hollow:hover{
+    background-color: white;
+    color: #fe4910;
 }
 
 .button:hover {
@@ -584,6 +591,124 @@ div.invitado p {
 div.invitado:hover p {
     bottom: -80px;
     opacity: 0;
+}
+
+
+/*---CONTADOR---*/
+
+
+/*imagen de fondo del contador*/
+
+.parallax::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    filter: brightness(.8);
+    -webkit-filter: brightness(.8);
+}
+
+div.contador {
+    position: relative;
+    height: auto;
+}
+
+div.contador::before {
+    background-image: url(../img/bg-resumen.jpg);
+    content: '';
+}
+
+ul.resumen-evento {
+    position: relative;
+    padding: 120px 0;
+}
+
+ul.resumen-evento li {
+    width: 50%;
+    float: left;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+    ul.resumen-evento li {
+        width: 25%;
+    }
+}
+
+p.numero {
+    color: #fe4910;
+    font-size: 4em;
+    display: block;
+    margin: 0 0 10px 0;
+    font-family:'Oswald', sans-serif;
+}
+
+/*----LISTA DE PRECIOS----*/
+/*Se utiliza > li para seleccionar los li del nivel superior*/
+ul.lista-precios > li{
+    padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    ul.lista-precios > li{
+        width: 33.3%;
+        float: left;
+    }
+}
+
+div.tabla-precio{
+    border: 1px solid #e1e1e1;
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+div.tabla-precio:hover{
+    transform: scale(1.1);
+    border: 1px solid #fe4910;
+    box-shadow: 0px 0px 50px #666;
+}
+
+div.tabla-precio ul li{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #868686;
+    line-height: 26px; 
+}
+
+div.tabla-precio ul li::before{
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 5px;
+    font-size: 20px;
+    color: green;
+    -webkit-font-smoothing: antialiased;
+    content:'\f00c';
+}
+
+div.tabla-precio h3{
+    font-family:'Oswald', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    
+}
+
+div.tabla-precio p.numero{
+    color: #000000;
+    margin: 20px 0;
 }
 
 
