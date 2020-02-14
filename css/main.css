@@ -563,6 +563,7 @@ div.invitado img {
     max-width: 100%;
     filter: grayscale(1);
     -webkit-filter: grayscale(1);
+    transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
 }
 
@@ -585,6 +586,7 @@ div.invitado p {
     font-family: 'Oswald', sans-serif;
     color: #fe4910;
     text-transform: uppercase;
+    transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
 }
 
@@ -710,6 +712,17 @@ div.tabla-precio p.numero{
     color: #000000;
     margin: 20px 0;
 }
+
+/*---   MAPA   ---*/
+div.mapa{
+    height: 420px;
+    background-color: green;
+}
+
+/*---   TESTIMONIALES   ---*/
+
+
+
 
 
 /* ==========================================================================
