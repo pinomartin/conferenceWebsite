@@ -721,9 +721,94 @@ div.mapa{
 
 /*---   TESTIMONIALES   ---*/
 
+div.testimoniales{
+    padding-bottom: 20px;
+}
 
+div.testimonial{
+    padding: 5px;
+}
 
+@media only screen and (min-width: 768px) {
+    div.testimonial{
+        /*Para que se coloque uno frente del otro*/
+        width: 33.3%;
+        float: left;
+    }
+}
 
+blockquote{
+    background-color: #ffffff;
+    border: 1x solid #e1e1e1;
+    position: relative;
+    margin: 0 0 10px 0;
+    padding-bottom: 20px;
+}
+
+blockquote p {
+    text-align: justify!important;
+    font-size: 1em!important;
+    font-family: 'PT Sans' , 'Sans Serif';
+    padding: 0 20px 0 65px;
+}
+
+/*Codigo de las Comillas (insertadas mediante FontAwesome), antes del parrafo (before)*/
+blockquote p::before {
+    /*la comilla se inserta con el "content"*/
+    content: '\201c';
+    position: absolute;
+    left: 13px;
+    top: 0px;
+    font-size: 8rem;
+    color: #fe4910;
+    margin: 0;
+    padding: 0;
+    /*Para quitarle el interlineado que trae por defecto*/
+    line-height: 1;
+}
+
+footer.info-testimonial{
+    padding:0;
+}
+
+footer.info-testimonial img{
+    float: left;
+    width: 20%;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+footer.info-testimonial cite{
+    text-align: left;
+    color: #fe4910;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-top: 20px;
+    width: 66.6%;
+    float: right;
+    font-style: normal;
+    font-weight: bold;
+}
+
+footer.info-testimonial cite span{
+    color: #000000;
+    text-transform: none;
+    /*Para meter un salto de linea (uno abajo del otro)*/
+    display: block;
+    margin-top: 10px;
+}
+
+/**** Newsletter*******/
+
+div.newsletter{
+    position: relative;
+    height: auto;
+}
+
+div.newsletter::before{
+    background-image: url(../img/bg-newsletter.jpg);
+    
+}
 
 /* ==========================================================================
    Helper classes
