@@ -186,6 +186,8 @@ h3 {
     margin: 0;
 }
 
+/*BOTONES*/
+
 .button {
     background-color: #fe4910;
     padding: 10px 40px;
@@ -207,9 +209,21 @@ h3 {
     color: #fe4910;
 }
 
+.button.transparent{
+    background-color: transparent;
+    border-color: #ffffff;
+}
+
+.button.transparent:hover{
+    border-color: #fe4910;
+}
+
 .button:hover {
     background-color: #e33000;
 }
+
+
+
 
 .float-right {
     float: right;
@@ -748,7 +762,7 @@ blockquote{
 blockquote p {
     text-align: justify!important;
     font-size: 1em!important;
-    font-family: 'PT Sans' , 'Sans Serif';
+    font-family: 'PT Sans', sans-serif;
     padding: 0 20px 0 65px;
 }
 
@@ -799,6 +813,8 @@ footer.info-testimonial cite span{
 }
 
 /**** Newsletter*******/
+/*Es necesaria la prop "position relative" en 1 y 3 ya que comparte  la clase 
+que ya contiene en sus props a "position relative"  */
 
 div.newsletter{
     position: relative;
@@ -807,7 +823,27 @@ div.newsletter{
 
 div.newsletter::before{
     background-image: url(../img/bg-newsletter.jpg);
-    
+    content: '';
+}
+
+div.newsletter .contenido{
+    padding: 100px 0;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+
+}
+
+div.newsletter .contenido p{
+    font-size: 2.2em;
+    text-transform: lowercase;
+}
+
+div.newsletter .contenido h3{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 7vw;
+    font-family: 'PT Sans', sans-serif;
 }
 
 /* ==========================================================================
