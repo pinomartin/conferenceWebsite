@@ -668,6 +668,14 @@ p.numero {
     font-family:'Oswald', sans-serif;
 }
 
+.numero{
+    color: #fe4910;
+    font-size: 4em;
+    display: block;
+    margin: 0 0 10px 0;
+    font-family:'Oswald', sans-serif;
+}
+
 /*----LISTA DE PRECIOS----*/
 /*Se utiliza > li para seleccionar los li del nivel superior*/
 ul.lista-precios > li{
@@ -846,6 +854,72 @@ div.newsletter .contenido h3{
     font-family: 'PT Sans', sans-serif;
 }
 
+/*Cuenta Regresiva*/
+
+div.cuenta-regresiva ul li{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    div.cuenta-regresiva ul li{
+        /*Para que se coloque uno frente del otro*/
+        width: 25%;
+        float: left;
+    }
+}
+
+/***************************************
+***************Footer*/
+footer{
+    background-color: #353553 ;
+    padding-top: 40px;
+    margin-top: 20px;
+}
+
+footer .contenedor > div {
+    color: #ffffff;
+    padding: 20px;
+    font-size: 12px;
+   
+}
+
+@media only screen and (min-width: 768px) {
+    footer .contenedor > div {
+        /*Para que se coloque uno frente del otro*/
+        width: 33.3%;
+        float: left;
+    }
+}
+
+footer h3{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+}
+
+footer h3 span{
+    color: #fe4910;
+}
+
+footer .ultimos-tweets li{
+    margin-bottom: 10px;
+}
+
+footer nav.redes-sociales{
+    text-align: left;
+}
+
+p.copyright{
+    background-color: #2e2e2e;
+    color: #ffffff;
+    padding: 10px 0px;
+    text-align: center;
+    margin: 0;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
